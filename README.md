@@ -10,7 +10,7 @@ This repo contains three classes, each in a separate Python file.
 ## Matcher
 Fundamentally, tracking is about matching and assigning newly encountered object instances to old object instances.  The user is responsible for providing the function `scoreFunc(a, b)` that scores how well objects `a` and `b` match.  Lower the score, better the match.  
 
-The actual match is performed by `Matcher()`, implemented in `Matcher.py`.  The `match()` function calls the user-supplied `scoreFunc()` and returns three values:  `matchedPair`, `unmatched_a`, and `unmatched_b`.
+The actual match is performed by `Matcher()`, implemented in `Matcher.py`.  The `match()` function calls the user-supplied `scoreFunc()` and returns three lists:  `matchedPair`, `unmatched_a`, and `unmatched_b`.
 
 * `matchedPair` - a list of `(a, b)` that have been matched given `scoreFunc()`
 * `unmatched_a` - a list of remaining `a` that have not been matched

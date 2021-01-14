@@ -17,7 +17,7 @@ The actual match is performed by `Matcher()`, implemented in `Matcher.py`.  The 
 * `unmatched_b` - a list of unmatched `b`  
 
 ## Tracker
-While `Matcher()` can match any two objects when given a `scoreFunc(a, b)` that knows how to score the match between two objects of the same type, it does not maintains a trace of past matches.  The `Tracker()` class does. The `Tracker()` class inherits from `Matcher()` but also maintains a trace of matches.  
+While `Matcher()` can match any two objects when given a `scoreFunc(a, b)`, it does not maintains a history of past matches;  `Tracker()` class does. The `Tracker()` class inherits from `Matcher()` and maintains a history of matches in the variable, `tracked`.
 
 There are three possible matching scenarios:
 

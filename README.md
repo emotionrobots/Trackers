@@ -1,7 +1,7 @@
 # Generic Object Tracker
-This repository implements a generic object tracker. The tracker can be used to track any Python objects. Tracker maintains a time history for each object, therefore it can be used to track movement of targets.  
+This repository implements a generic object tracker. The tracker can be used to track any Python objects. Tracker maintains a time history for each target, therefore it can be used to track movements, or path.  
 
-The repo implement three classes, each in a separate Python file.
+This repo contains three classes, each in a separate Python file.
 
 * `Matcher.py`     - implements `Matcher()`, a generic object matcher.
 * `Tracker.py`     - implements `Tracker()`, a generic tracker for tracking any given object

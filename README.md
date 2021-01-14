@@ -21,9 +21,9 @@ While `Matcher()` can match any two objects when given a `scoreFunc(a, b)` that 
 
 There are three possible matching scenarios:
 
-* Number of traces = number of objects
-* Number of traces > number of objects
-* Number of traces < number of objects
+* Number of traces = number of objects --> Every object assigned to a trace
+* Number of traces > number of objects --> Delete/clear unmatched trace
+* Number of traces < number of objects --> Create new trace
 
 These three cases are illustrated in the image below:
 
@@ -31,7 +31,4 @@ These three cases are illustrated in the image below:
 
 ## BlobTracker
 User of the `Tracker()` class can override the `scoreFunc()` and define their own tracker.  The `BlobTracker()` included with this repo demonstrate exactly this.  The `BlobTracker()` is a tracker that knows how to match and track OpenCV blobs.
-
-
-## Inheritance
-The included blobTracker.py shows how Tracker can be extended through class inheritance.
+`blobTracker.py` also shows how `Tracker()` can be extended through class inheritance.

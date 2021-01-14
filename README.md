@@ -30,5 +30,5 @@ These three cases are illustrated in the image below:
 ![alt text](https://github.com/emotionrobots/Trackers/blob/main/assets/matches.png)
 
 ## BlobTracker
-User of the `Tracker()` class can override the `scoreFunc()` and define their own tracker.  The `BlobTracker()` included with this repo demonstrate exactly this.  The `BlobTracker()` is a tracker that knows how to match and track OpenCV blobs.
+User of the `Tracker()` class can override the `scoreFunc()` and create a new class.  The `BlobTracker()` included with this repo demonstrates exactly that.  The `BlobTracker()` is a tracker that knows how to match and track OpenCV blobs.
 `blobTracker.py` also shows how `Tracker()` can be extended through class inheritance.

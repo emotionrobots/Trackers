@@ -27,7 +27,7 @@ There are three possible matching scenarios:
 
 These three cases are illustrated in the image below:
 
-![alt text](https://github.com/emotionrobots/Trackers/blob/main/assets/match1.png)
+![alt text](https://github.com/emotionrobots/Trackers/blob/main/assets/matches.png)
 
 ## BlobTracker
 User of the `Tracker()` class can override the `scoreFunc()` and define their own tracker.  The `BlobTracker()` included with this repo demonstrate exactly this.  The `BlobTracker()` is a tracker that knows how to match and track OpenCV blobs.

@@ -16,8 +16,21 @@ The actual match is performed by `Matcher()`, implemented in `Matcher.py`.  The 
 * `unmatched_a` - a list of remaining `a` that have not been matched
 * `unmatched_b` - a list of remaining `b` that have not been matched
 
-## Tracking
-User of the Tracker() class can override the scoreFunc()
+## Tracker
+While `Matcher()` can match any two objects when given a `scoreFunc(a, b)` that knows how to score the match between two objects of the same type, it does not maintains a trace of past matches.  The `Tracker()` class does. The `Tracker()` class inherits from `Matcher()` but also maintains a trace of matches.  
+
+There are three possible matching scenarios:
+
+* Number of traces = number of objects
+* Number of traces > number of objects
+* Number of traces < number of objects
+
+These three cases are illustrated in the image below:
+
+![alt text](https://github.com/emotionrobots/Trackers/blob/main/assets/match1.png)
+
+## BlobTracker
+User of the `Tracker()` class can override the `scoreFunc()` and define their own tracker.  The `BlobTracker()` included with this repo demonstrate exactly this.  The `BlobTracker()` is a tracker that knows how to match and track OpenCV blobs.
 
 
 ## Inheritance

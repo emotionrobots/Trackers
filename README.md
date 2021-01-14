@@ -12,7 +12,7 @@ Fundamentally, tracking is about matching and assigning newly encountered object
 
 The actual match is performed by `Matcher()`, implemented in `Matcher.py`.  The `match()` function calls the user-supplied `scoreFunc()` and returns three lists:  `matchedPair`, `unmatched_a`, and `unmatched_b`.
 
-* `matchedPair` - a list of `(a, b)` that have been matched given `scoreFunc()`
+* `matchedPair` - a list of tuple `(a, b)` that has been matched using the given `scoreFunc()`
 * `unmatched_a` - a list of remaining `a` that have not been matched
 * `unmatched_b` - a list of remaining `b` that have not been matched
 

@@ -5,7 +5,7 @@ This repo contains three classes, each in a separate Python file.
 
 * `Matcher.py`     - implements `Matcher()`, a generic object matcher.
 * `Tracker.py`     - implements `Tracker()`, a generic tracker for tracking any given object
-* `blobTracker.py` - implements `BlobTracker()`` using `Tracker()`
+* `blobTracker.py` - implements `BlobTracker()` using `Tracker()`
 
 ## Matcher
 Fundamentally, tracking is about matching and assigning newly encountered object instances to old object instances.  The user is responsible for providing the function `scoreFunc(a, b)` that scores how well objects `a` and `b` match.  Lower the score, better the match.  
